@@ -27,7 +27,7 @@ namespace Synthesis.Solr.ContentSearch
             Assert.IsNotNull(typeResolverFactory, "normalizerFactory is null.");
             TemplateFieldTypeResolver fieldTypeResolver = typeResolverFactory.Create();
             Assert.IsNotNull(fieldTypeResolver, "FieldTypeResolver is null.");
-            SolrFieldConfigurationResolver configurationResolver = new SolrFieldConfigurationResolver(fieldMap, schema, fieldTypeResolver);
+            SolrFieldConfigurationResolver configurationResolver = new SynthesisSolrFieldConfigurationResolver(fieldMap, schema, fieldTypeResolver);
             var ctor = typeof(SolrFieldNameTranslator).Assembly
                 .GetType("Sitecore.ContentSearch.SolrProvider.FieldNames.CultureContextGuard")
                 .GetConstructors().First();
