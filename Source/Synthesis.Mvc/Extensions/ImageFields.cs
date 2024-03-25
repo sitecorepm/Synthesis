@@ -70,7 +70,7 @@ namespace Synthesis.Mvc.Extensions
 
 		public static IHtmlString RenderDpiAware(this IImageField field, int? max1XWidth = null, int? max1XHeight = null, string cssClass = null, int maxScale = 2, bool editable = true)
 		{
-			if (Sitecore.Context.PageMode.IsExperienceEditor || maxScale == 1)
+			if ((Sitecore.Context.PageMode.IsExperienceEditor && editable) || maxScale == 1)
 			{
 				return Render(field, max1XWidth, max1XHeight, cssClass, editable);
 			}
