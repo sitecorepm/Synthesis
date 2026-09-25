@@ -34,3 +34,5 @@ Packages/*
 # Any Sitecore assemblies copied local
 Dependencies/Libraries/Sitecore/*
 _NCrunch*
+
+license.xml

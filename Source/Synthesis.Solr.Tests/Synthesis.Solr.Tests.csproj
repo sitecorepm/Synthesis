@@ -1,7 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>net481</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <GenerateBindingRedirectsOutputType>true</GenerateBindingRedirectsOutputType>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="App.config" />
@@ -28,19 +30,21 @@
     <PackageReference Include="AutoFixture.AutoNSubstitute" Version="4.6.0" />
     <PackageReference Include="AutoFixture.Xunit2" Version="4.6.0" />
     <PackageReference Include="FluentAssertions" Version="5.5.3" />
-    <PackageReference Include="NSubstitute" Version="3.1.0" />
-    <PackageReference Include="Sitecore.ContentSearch" Version="9.1.0" />
-    <PackageReference Include="Sitecore.ContentSearch.Linq" Version="9.1.0" />
-    <PackageReference Include="Sitecore.ContentSearch.SolrProvider" Version="9.1.0" />
-    <PackageReference Include="Sitecore.FakeDb" Version="2.0.0-beta2" />
-    <PackageReference Include="Sitecore.FakeDb.AutoFixture" Version="2.0.0-beta2" />
-    <PackageReference Include="Sitecore.FakeDb.NSubstitute" Version="2.0.0-beta2" />
-    <PackageReference Include="Sitecore.Kernel" Version="9.1.0" />
-    <PackageReference Include="Sitecore.Logging" Version="9.1.0" />
-    <PackageReference Include="Sitecore.Nexus" Version="9.1.0">
+    <PackageReference Include="NSubstitute" Version="4.2.1" />
+    <PackageReference Include="Sitecore.ContentSearch" Version="10.5.0" />
+    <PackageReference Include="Sitecore.ContentSearch.Linq" Version="10.5.0" />
+    <PackageReference Include="Sitecore.ContentSearch.SolrProvider" Version="10.5.0" />
+    <PackageReference Include="Sitecore.FakeDb" Version="3.0.0-alpha1" />
+    <PackageReference Include="Sitecore.FakeDb.AutoFixture" Version="3.0.0-alpha1" />
+    <PackageReference Include="Sitecore.FakeDb.NSubstitute" Version="3.0.0-alpha1" />
+    <PackageReference Include="Sitecore.Kernel" Version="10.5.0" />
+    <PackageReference Include="Sitecore.Logging" Version="10.5.0" />
+    <PackageReference Include="Sitecore.Nexus" Version="10.1.3">
       <PrivateAssets></PrivateAssets>
     </PackageReference>
+    <PackageReference Include="SolrNet.Core" Version="1.0.19" />
     <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.console" Version="2.4.1" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Synthesis.Solr\Synthesis.Solr.csproj" />

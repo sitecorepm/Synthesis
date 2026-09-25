@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net471</TargetFramework>
+    <TargetFramework>net481</TargetFramework>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -18,10 +18,11 @@
     <None Remove="Synthesis.Mvc.nuspec" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Sitecore.ContentSearch" Version="9.1.0" ExcludeAssets="runtime" PrivateAssets="all" />
-    <PackageReference Include="Sitecore.ExperienceExplorer.Core" Version="9.1.0" ExcludeAssets="runtime" PrivateAssets="all" />
-    <PackageReference Include="Sitecore.Kernel" Version="9.1.0" ExcludeAssets="runtime" PrivateAssets="all" />
-    <PackageReference Include="Sitecore.Mvc" Version="9.1.0" ExcludeAssets="runtime" PrivateAssets="all" />
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.4" ExcludeAssets="runtime" PrivateAssets="all" />
+    <PackageReference Include="Sitecore.ContentSearch" Version="10.5.0" ExcludeAssets="runtime" PrivateAssets="all" />
+    <PackageReference Include="Sitecore.ExperienceExplorer.Core" Version="10.5.0" ExcludeAssets="runtime" PrivateAssets="all" />
+    <PackageReference Include="Sitecore.Kernel" Version="10.5.0" ExcludeAssets="runtime" PrivateAssets="all" />
+    <PackageReference Include="Sitecore.Mvc" Version="10.5.0" ExcludeAssets="runtime" PrivateAssets="all" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\SharedAssemblyInfo.cs">
